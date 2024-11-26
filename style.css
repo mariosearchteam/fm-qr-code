@@ -1,0 +1,99 @@
+/* Import */
+@font-face {
+  font-family: "Outfit";
+  src: url(./fonts/Outfit/Outfit-VariableFont_wght.ttf) format("truetype");
+}
+
+/* variables */
+
+:root {
+  --fw-400: 400;
+  --fw-700: 700;
+
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-blue-300: hsl(212, 45%, 89%);
+  --clr-blue-500: hsl(216, 15%, 48%);
+  --clr-blue-900: hsl(218, 44%, 22%);
+
+  --spacer: 1rem;
+}
+
+/* reset */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4 {
+  line-height: 1.2;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+ul[class],
+ol[class] {
+  list-style: none;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Utility classes */
+.flow-content > * + * {
+  margin-top: var(--flow-space, var(--spacer));
+}
+
+.flow-content--large {
+  --flow-space: 3rem;
+}
+
+.container {
+  padding: 0 var(--spacer);
+  max-width: 70rem;
+  margin: 0 auto;
+}
+
+/* general styles */
+body {
+  font-size: 15px;
+  font-weight: var(--fw-400);
+  font-family: "Outfit", sans-serif;
+  color: var(--clr-blue-900);
+  background: var(--clr-blue-300);
+}
+
+/* section */
+.container {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+.card {
+  max-width: 20rem;
+  background: var(--clr-white);
+  border-radius: 1rem;
+  padding: 1rem;
+  margin-bottom: var(--spacer);
+}
+
+.card__image {
+  border-radius: 0.5rem;
+}
