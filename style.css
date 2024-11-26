@@ -5,7 +5,6 @@
 }
 
 /* variables */
-
 :root {
   --fw-400: 400;
   --fw-700: 700;
@@ -76,7 +75,7 @@ body {
   font-size: 15px;
   font-weight: var(--fw-400);
   font-family: "Outfit", sans-serif;
-  color: var(--clr-blue-900);
+  color: var(--clr-blue-500);
   background: var(--clr-blue-300);
 }
 
@@ -92,8 +91,20 @@ body {
   border-radius: 1rem;
   padding: 1rem;
   margin-bottom: var(--spacer);
+  text-align: center;
 }
 
 .card__image {
   border-radius: 0.5rem;
+}
+
+.card__content {
+  padding: 0.5rem 1rem 2rem;
+}
+
+.card__title {
+  font-weight: var(--fw-700);
+  color: var(--clr-blue-900);
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
 }
